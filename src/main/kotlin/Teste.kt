@@ -1,15 +1,18 @@
 import java.util.*
+
 fun main(args: Array<String>) {
-    var A: Double
-    var B: Double
+    var name: String
+    var value1: Double
+    var value2: Double
 
     val input = Scanner(System.`in`)
 
-    A = input.nextLine().toDouble() * 3.5
-    B = input.nextLine().toDouble() * 7.5
+    name = input.nextLine().toString()
+    value1 = input.nextLine().toDouble()
+    value2 = input.nextLine().toDouble()
 
-    var media: Double = (A + B) / 11
-    var media2 = media
+    var salario = value1 + (value2*0.15)
 
-    println("MEDIA = " + "%.5f".format(media2))
+    println("TOTAL = R$ " + "%.2f".format(salario))
+
 }

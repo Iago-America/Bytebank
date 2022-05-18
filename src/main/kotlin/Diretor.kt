@@ -9,10 +9,10 @@ class Diretor(
     cpf = cpf,
     salario = salario
 ) {
-
+    //Super = Reutilizar para sobreescrever algo que já está pronto la na classe mãe, utilize o super
     override val bonificacao: Double
         get() {
-            return salario * 0.3
+            return super.bonificacao + salario + plr
         }
 
     fun autentica(senha: Int): Boolean {

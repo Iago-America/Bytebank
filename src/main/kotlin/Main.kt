@@ -52,6 +52,7 @@ fun main(args: Array<String>) {
     println("Salário: R$${lucas.salario}")
     println("Senha: ${lucas.senha}")
     println("PLR: ${lucas.plr}")
+    println("Bonificação: ${lucas.bonificacao}")
 
 
 }
