@@ -31,7 +31,28 @@ fun main(args: Array<String>) {
     println("CPF: ${iago.cpf}")
     println("Salário: R$${iago.salario}")
 
-    println("A bonificação de ${iago.nome} será de R$${iago.bonificacao()}")
+    println("A bonificação de ${iago.nome} será de R$${iago.bonificacao()}\n")
+
+    val lucas = Diretor(
+        nome = "Lucas",
+        cpf = "333.333.333-33",
+        salario = 8000.0,
+        senha = 6512,
+        plr = 500.0
+    )
+
+    if (lucas.autentica(6512)) {
+        println("Autenticado com sucesso")
+    } else {
+        println("Erro na autenticação")
+    }
+
+    println("Nome: ${lucas.nome}")
+    println("CPF: ${lucas.cpf}")
+    println("Salário: R$${lucas.salario}")
+    println("Senha: ${lucas.senha}")
+    println("PLR: ${lucas.plr}")
+
 
 }
 
