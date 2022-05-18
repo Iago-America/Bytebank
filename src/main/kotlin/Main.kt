@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
     println("CPF: ${alex.cpf}")
     println("Salário: R$${alex.salario}")
 
-    println("A bonificação de ${alex.nome} será de R$${alex.bonificacao()}")
+    println("A bonificação de ${alex.nome} será de R$${alex.bonificacao}")
 
 
     val iago = Gerente(
@@ -31,7 +31,7 @@ fun main(args: Array<String>) {
     println("CPF: ${iago.cpf}")
     println("Salário: R$${iago.salario}")
 
-    println("A bonificação de ${iago.nome} será de R$${iago.bonificacao()}\n")
+    println("A bonificação de ${iago.nome} será de R$${iago.bonificacao}\n")
 
     val lucas = Diretor(
         nome = "Lucas",
