@@ -54,11 +54,18 @@ fun main(args: Array<String>) {
     println("PLR: ${lucas.plr}")
     println("Bonificação: ${lucas.bonificacao}")
 
+    val maria = Analista(
+        nome = "Maria",
+        cpf = "444.444.444.44",
+        salario = 2500.0
+    )
+
     var calcBonificacao = CalculadoraBonificacao()
 
     calcBonificacao.registra(alex)
     calcBonificacao.registra(iago)
     calcBonificacao.registra(lucas)
+    calcBonificacao.registra(maria)
     println("Bonificação total= " + calcBonificacao.total)
 
 
