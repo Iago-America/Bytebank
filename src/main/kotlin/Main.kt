@@ -54,6 +54,13 @@ fun main(args: Array<String>) {
     println("PLR: ${lucas.plr}")
     println("Bonificação: ${lucas.bonificacao}")
 
+    var calcBonificacao = CalculadoraBonificacao()
+
+    calcBonificacao.registra(alex)
+    calcBonificacao.registra(iago)
+    calcBonificacao.registra(lucas)
+    println("Bonificação total= " + calcBonificacao.total)
+
 
 }
 

@@ -1,18 +1,32 @@
 import java.util.*
 
 fun main(args: Array<String>) {
-    var name: String
-    var value1: Double
-    var value2: Double
+    var peça: Int;
+    var nPeças: Int;
+    var uniPeças: Double;
+
+    var valor: Double = 0.0
+
+
+    var soma = 0.0
+
+    var i = 0
 
     val input = Scanner(System.`in`)
+    println("VALOR A PAGAR: R$ " + "%.2f".format(soma))
 
-    name = input.nextLine().toString()
-    value1 = input.nextLine().toDouble()
-    value2 = input.nextLine().toDouble()
+    for (i in 1..2) {
+        println("Digite a peça $i")
+        peça = input.nextLine().toInt()
+        nPeças = input.nextLine().toInt()
+        uniPeças = input.nextLine().toDouble()
 
-    var salario = value1 + (value2*0.15)
+        valor = nPeças * uniPeças
 
-    println("TOTAL = R$ " + "%.2f".format(salario))
+        soma += valor
+
+    }
+
+
 
 }
